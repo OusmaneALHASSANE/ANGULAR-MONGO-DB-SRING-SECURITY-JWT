@@ -1,0 +1,19 @@
+<div class="col-md-6">
+
+  <div class="card">
+    <div CLASS="card-header">Authentification</div>
+    <div class="card-body">
+      <form #f="ngForm" (ngSubmit)="onLogin(f.value)">
+        <div class="form-group">
+          <label class="col-form-label">Username</label>
+          <input type="text" name="username" ngModel class="form-control">
+        </div>
+        <div class="form-group">
+          <label class="col-form-labell">Password</label>
+          <input type="password" name="password" ngModel class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+  </div>
+</div>
